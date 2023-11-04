@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="contant">
+    <h2> send your enquiry
+    </h2>
+    <button id="get-Quote" onclick="OpenModel()">
+      Get Your Quote Now
+    </button>
+  </div>
+  <div id="popUpBody">
+    <form >
+      <div class="cancel" onclick="closePop()">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <input type="text" placeholder="Name" id="name" value="">
+      <input type="email" placeholder="Email" id="email" value="">
+      <input type="Number" placeholder="Phone Number" id="number" value="">
+      <select name=""  placeholder="Select Country" id="country">
+        <option value="">India</option>
+        <option value="">Pakistan</option>
+        <option value="">US</option>
+        <option value="">UK</option>
+      </select>
+      <input type="submit" value="submit" id="submit" onclick="validateForm()">
+    </form>
+  </div>
+  <script src="custom.js"></script>
+</body>
+</html>

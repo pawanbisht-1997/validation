@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #c33d81 50%,#482429);
+
+}
+.contant{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contant h2{
+    font-size: 75px;
+    color: #fff;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    text-transform: uppercase;
+    border-image: linear-gradient(to right, #8f3d87, #d35d6d);
+    text-shadow: 3px 1px #000;
+}
+
+button{
+    width: 300px;
+    height: 75px;
+    font-size: 19px;
+    border: unset;
+    border-radius: 4px;
+    margin: 45px auto;
+    display: block;
+    background-color: #c50566;
+    color: #fff;
+    text-transform: uppercase;
+    outline: 1px solid #ffffff4f;
+    outline-offset: -10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+#popUpBody{
+    background-color: #000000a8;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: -1;
+    transition: all ease-in-out 0.5s;
+    transform: scale(0.9);
+}
+form {
+    background-color: #c50566;
+    width: 35%;
+    padding: 40px;
+    border-radius: 5px;
+    position: relative;
+
+}
+input,select{
+    width: 100%;
+    height: 50px;
+    padding: 9px 20px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 8px 0px;
+}
+input[type='submit']{
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 15px 0px;
+}
+.cancel {
+    background-color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: #c50566;
+    position: absolute;
+    right: -15px;
+    cursor: pointer;
+    top: -20px;
+}
+  
